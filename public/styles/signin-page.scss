@@ -1,0 +1,66 @@
+:root {
+  --input-padding-x: .75rem;
+  --input-padding-y: .75rem;
+}
+
+.signin-page {
+  background-color: rgba(12, 5, 104, 0.904);
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  -ms-flex-align: center;
+  -ms-flex-pack: center;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+
+
+
+
+  .form-signin {
+    width: 100%;
+    max-width: 850px;
+    padding: 15px;
+    margin: 0 auto;
+    border-radius: 10px;
+  }
+  .form-signin form{
+    border-top-right-radius: 10px;
+
+  }
+
+  .overlay{
+    margin-top: 40%;
+  }
+
+  .sign-in-img {
+    top: 0;
+    background: rgba(12, 5, 104, 0.603);
+    color: rgba(255, 255, 255, 0.596);
+    height: 100%;
+    width: 100%;
+    /* border-top-left-radius: 10px; */
+    border-bottom-left-radius: 10px;
+    transition: 2s;
+  }
+  .sign-in-img:hover {
+    background: rgba(12, 5, 104, 0.877);
+    color: white;
+    transition: 1s;
+  }
+
+  .form-signin .d-md-block img {
+    width: 425px;
+    height: 395px;
+    /* border-top-left-radius: 10px; */
+    border-bottom-left-radius: 10px;
+  }
+
+ @import "labels-css";
+
+
+}

@@ -1,0 +1,150 @@
+/********GENERAL RULE**********/
+body {
+  font-family: 'ubuntu'; }
+
+.block-container {
+  overflow: hidden; }
+
+/********ENDS HERE**********/
+/********FOR THE NAVBAR**********/
+.sign-in-out a {
+  text-decoration: none;
+  color: black;
+  padding: 1rem; }
+
+.nav-link img {
+  width: 25px; }
+
+/********FOR THE SLIDER ANIMATION**********/
+.slideanim {
+  visibility: hidden; }
+
+.slide {
+  animation-name: slide;
+  -webkit-animation-name: slide;
+  animation-duration: 1s;
+  -webkit-animation-duration: 1s;
+  visibility: visible; }
+
+@keyframes slide {
+  0% {
+    opacity: 0;
+    transform: translateY(70%); }
+  100% {
+    opacity: 1;
+    transform: translateY(0%); } }
+@-webkit-keyframes slide {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(70%); }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0%); } }
+/********FOR THE SECTIONS**********/
+:root {
+  --input-padding-x: .75rem;
+  --input-padding-y: .75rem; }
+
+.signin-page {
+  background-color: rgba(12, 5, 104, 0.904);
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  -ms-flex-align: center;
+  -ms-flex-pack: center;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  position: absolute; }
+  .signin-page .form-signin {
+    width: 100%;
+    max-width: 850px;
+    padding: 15px;
+    margin: 0 auto;
+    border-radius: 10px; }
+  .signin-page .form-signin form {
+    border-top-right-radius: 10px; }
+  .signin-page .overlay {
+    margin-top: 40%; }
+  .signin-page .sign-in-img {
+    top: 0;
+    background: rgba(12, 5, 104, 0.603);
+    color: rgba(255, 255, 255, 0.596);
+    height: 100%;
+    width: 100%;
+    /* border-top-left-radius: 10px; */
+    border-bottom-left-radius: 10px;
+    transition: 2s; }
+  .signin-page .sign-in-img:hover {
+    background: rgba(12, 5, 104, 0.877);
+    color: white;
+    transition: 1s; }
+  .signin-page .form-signin .d-md-block img {
+    width: 425px;
+    height: 395px;
+    /* border-top-left-radius: 10px; */
+    border-bottom-left-radius: 10px; }
+  .signin-page .form-signin .form-control,
+  .signin-page .float .form-control {
+    height: auto; }
+  .signin-page .form-label-group {
+    position: relative;
+    margin-bottom: 1rem; }
+  .signin-page .form-label-group > input,
+  .signin-page .form-label-group > label {
+    padding: var(--input-padding-y) var(--input-padding-x); }
+  .signin-page .form-label-group > label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    /* width: 100%; */
+    margin-bottom: 0;
+    /* Override default `<label>` margin */
+    line-height: 1.5;
+    color: #495057;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+    transition: all .1s ease-in-out; }
+  .signin-page .form-label-group input::-webkit-input-placeholder {
+    color: transparent; }
+  .signin-page .form-label-group input:-ms-input-placeholder {
+    color: transparent; }
+  .signin-page .form-label-group input::-ms-input-placeholder {
+    color: transparent; }
+  .signin-page .form-label-group input::-moz-placeholder {
+    color: transparent; }
+  .signin-page .form-label-group input::placeholder {
+    color: transparent; }
+  .signin-page .form-label-group input:not(:placeholder-shown) {
+    padding-top: calc(var(--input-padding-y) + var(--input-padding-y) * (2 / 3));
+    padding-bottom: calc(var(--input-padding-y) / 3); }
+  .signin-page .form-label-group input:not(:placeholder-shown) ~ label {
+    padding-top: calc(var(--input-padding-y) / 3);
+    padding-bottom: calc(var(--input-padding-y) / 3);
+    font-size: 12px;
+    color: #777; }
+
+/* FOR THE FOOTER SECTIONS*/
+footer {
+  background-color: rgba(11, 5, 104, 0.89);
+  color: white;
+  padding: 2rem; }
+  footer ul li {
+    list-style-type: none; }
+  footer nav li {
+    padding: 0.3rem; }
+  footer nav li:hover, footer nav li:active, footer nav li:visited {
+    margin-left: 1rem;
+    transition: 1s; }
+  footer nav a:hover {
+    text-decoration: none; }
+  footer .socials-links li {
+    display: inline-block;
+    padding: 2rem;
+    font-size: 3rem; }
+
+/*# sourceMappingURL=styles.css.map */

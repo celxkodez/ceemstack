@@ -1,0 +1,36 @@
+
+/* FOR THE FOOTER SECTIONS*/
+footer {
+  background-color: rgba(11, 5, 104, 0.89);
+  color: white;
+  padding: 2rem;
+
+  ul {
+    li{
+      list-style-type: none;
+    }
+  }
+
+  nav {
+    li {
+      padding: 0.3rem;
+
+    }
+    li:hover, li:active, li:visited {
+      margin-left: 1rem;
+      transition: 1s;
+    }
+
+    a:hover {
+      text-decoration: none;
+    }
+  }
+
+  .socials-links {
+    li{
+      display: inline-block;
+      padding: 2rem;
+      font-size: 3rem;
+    }
+}
+}
