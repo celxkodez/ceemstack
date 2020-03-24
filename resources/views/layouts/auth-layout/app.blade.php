@@ -1,10 +1,22 @@
+{{-- ABEG EHN, WEATHER YOU UNDERSTAND THE PIDGIN OR NOT EHN --}}
+{{-- I KNOW SAY YOU FIT LOST INSIDE HERE EHN, --}}
+{{-- AS E STANDS RIGHT NOW EHN, I NO FIT JUST WRITE COMMENT ON EVERY LINE --}}
+{{-- AS IT STANDS RIGHT NOW. --}}
+{{-- IF THE DOCUMENTATION NO COVER ALL OF THIS MODULE EHN, --}}
+{{-- AND YOU NO COME UNDERSTAND WHATS GOING ON HERE, --}}
+{{-- PLEASE DO NOT REMOVE ANY SINGLE LINE OF CODE HERE PLEASE --}}
+
+{{-- JUST CONTACT ME VIA 2348104222808, github.com/celxkodez, twitter.com/mr_celx --}}
+
+
+
 <!doctype html>
-<html class="no-js" lang="en">
+<html class="no-js" lang="str_replace('_', '-', app()->getLocale()) }}">
 
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Dashboard V.1 | Kiaalap - Kiaalap Admin Template</title>
+    <title>{{ config('app.name', 'CeeMstack') }}</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- favicon
@@ -392,7 +404,7 @@
                                                 <li class="nav-item">
                                                     <a href="#" data-toggle="dropdown" role="button" aria-expanded="false" class="nav-link dropdown-toggle">
 															<img src="{{asset('dummy-img/product/pro4.jpg')}}" alt="" />
-															<span class="admin-name">Prof.Anderson</span>
+															<span class="admin-name">{{ Auth::user()->name}}</span>
 															<i class="fa fa-angle-down edu-icon edu-down-arrow"></i>
 														</a>
                                                     <ul role="menu" class="dropdown-header-top author-log dropdown-menu animated zoomIn">
@@ -404,7 +416,23 @@
                                                         </li>
                                                         <li><a href="#"><span class="edu-icon edu-settings author-log-ic"></span>Settings</a>
                                                         </li>
-                                                        <li><a href="#"><span class="edu-icon edu-locked author-log-ic"></span>Log Out</a>
+                                                        <li>
+                                                            <a href="route('logout') "onclick="event.preventDefault();
+                                                                document.getElementById('logout-form').submit();">
+                                                                <span class="edu-icon edu-locked author-log-ic"></span>
+                                                            
+                                                                
+                                                                {{ __('Logout') }}
+                                                                <!-- Log Out -->
+                                                                
+
+
+
+                                                            </a>
+
+                                                            <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                                                @csrf
+                                                            </form>
                                                         </li>
                                                     </ul>
                                                 </li>
