@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateUserPofilesTable extends Migration
+class CreateUserProfilesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,14 +13,15 @@ class CreateUserPofilesTable extends Migration
      */
     public function up()
     {
-        Schema::create('user_pofile', function (Blueprint $table) {
+        Schema::create('user_profiles', function (Blueprint $table) {
             $table->increments('id');
             // $table->integer('role');
 
-            $table->string('bio');
-            $table->integer('phone_number');
-            $table->string('address');
-            $table->string('avater');
+            $table->string('bio')->default('your bio here');
+            $table->integer('phone_number')->nullable();
+            $table->string('address')->nullable();
+            $table->integer('user_id');
+            $table->string('avater')->nullable();
             $table->timestamps();
         });
     }
@@ -32,6 +33,6 @@ class CreateUserPofilesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('user_pofile');
+        Schema::dropIfExists('user_profiles');
     }
 }

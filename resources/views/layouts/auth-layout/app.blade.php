@@ -105,9 +105,14 @@
                                 <li><a title="Widgets" href="widgets.html"><span class="mini-sub-pro">Widgets</span></a></li> -->
                             </ul>
                         </li>
-                        <!-- <li>
-                            <a title="Landing Page" href="events.html" aria-expanded="false"><span class="educate-icon educate-event icon-wrap sub-icon-mg" aria-hidden="true"></span> <span class="mini-click-non">Event</span></a>
+                         <li>
+                            <a title="Profile" href="{{ route('profile') }}" aria-expanded="false">
+                                <!-- <span class="educate-icon educate-event icon-wrap sub-icon-mg" aria-hidden="true"></span>  -->
+                                <i class="fa fa-user icon-wrap sub-icon-mg" aria-hidden="true"></i>
+                                <span class="mini-click-non">Profile</span>
+                            </a>
                         </li>
+                        <!--
                         <li>
                             <a class="has-arrow" href="all-professors.html" aria-expanded="false"><span class="educate-icon educate-professor icon-wrap"></span> <span class="mini-click-non">Professors</span></a>
                             <ul class="submenu-angle" aria-expanded="false">
