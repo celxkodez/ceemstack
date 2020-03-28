@@ -53,7 +53,7 @@
     <link rel="stylesheet" href="{{ asset('app-css/educate-custon-icon.css') }}">
     <!-- morrisjs CSS
 		============================================ -->
-    <link rel="stylesheet" href="{{ asset('app-css/morris.css') }}">
+    <link rel="stylesheet" href="{{ asset('app-css/morrisjs/morris.css') }}">
     <!-- mCustomScrollbar CSS
 		============================================ -->
     <link rel="stylesheet" href="{{ asset('app-css/scrollbar/jquery.mCustomScrollbar.min.css') }}">
@@ -65,12 +65,22 @@
 		============================================ -->
     <link rel="stylesheet" href="{{ asset('app-css/calendar/fullcalendar.min.css') }}">
     <link rel="stylesheet" href="{{ asset('app-css/calendar/fullcalendar.print.min.css') }}">
+
+    <!-- forms CSS
+    ============================================ -->
+    <link rel="stylesheet" href="{{ asset('app-css/form/all-type-forms.css') }}">
     <!-- style CSS
 		============================================ -->
     <link rel="stylesheet" href="{{ asset('styles/app-style.css') }}">
     <!-- responsive CSS
 		============================================ -->
     <link rel="stylesheet" href="{{ asset('app-css/responsive.css') }}">
+    @stack('styles')
+    
+
+  
+
+
     <!-- modernizr JS
 		============================================ -->
     <script src="{{ asset('app-js/vendor/modernizr-2.8.3.min.js') }}"></script>
@@ -96,9 +106,9 @@
 								   <span class="mini-click-non">Post</span>
 								</a>
                             <ul class="submenu-angle" aria-expanded="true">
-                                <li><a title="All Post" href=""><span class="mini-sub-pro">All Post</span></a></li>
+                                <li><a title="All Post" href="{{ route('posts')}}"><span class="mini-sub-pro">All Post</span></a></li>
                                 <li><a title="My Posts" href=""><span class="mini-sub-pro">My Posts</span></a></li>
-                                <li><a title="Create Post" href=""><span class="mini-sub-pro">Create Post</span></a></li>
+                                <li><a title="Create Post" href="{{ route('post.create')}}"><span class="mini-sub-pro">Create Post</span></a></li>
                                 <!-- <li><a title="Dashboard v.2" href="index-1.html"><span class="mini-sub-pro">Dashboard v.2</span></a></li>
                                 <li><a title="Dashboard v.3" href="index-2.html"><span class="mini-sub-pro">Dashboard v.3</span></a></li>
                                 <li><a title="Analytics" href="analytics.html"><span class="mini-sub-pro">Analytics</span></a></li>
@@ -427,7 +437,7 @@
                                                 </li>
                                                 <li class="nav-item">
                                                     <a href="#" data-toggle="dropdown" role="button" aria-expanded="false" class="nav-link dropdown-toggle">
-															<img src="{{asset('dummy-img/product/pro4.jpg')}}" alt="" />
+															<img src="{{ Auth::user()->profile->avater }}" alt="" />
 															<span class="admin-name">{{ Auth::user()->name}}</span>
 															<i class="fa fa-angle-down edu-icon edu-down-arrow"></i>
 														</a>
@@ -1688,19 +1698,28 @@
     <script src="{{asset('app-js/metisMenu/metisMenu-active.js') }}"></script>
     <!-- morrisjs JS
 		============================================ -->
-    <script src="{{asset('app-js/raphael-min.js') }}"></script>
-    <script src="{{asset('app-js/morris.js') }}"></script>
-    <script src="{{asset('app-js/morris-active.js') }}"></script>
+    <script src="{{asset('app-js/morrisjs/raphael-min.js') }}"></script>
+    <script src="{{asset('app-js/morrisjs/morris.js') }}"></script>
+    <script src="{{asset('app-js/morrisjs/morris-active.js') }}"></script>
     <!-- morrisjs JS
 		============================================ -->
     <script src="{{ asset('app-js/sparkline/jquery.sparkline.min.js') }}"></script>
     <script src="{{asset('app-js/sparkline/jquery.charts-sparkline.js') }}"></script>
     <script src="{{ asset('app-js/sparkline/sparkline-active.js') }}"></script>
     <!-- calendar JS
-		============================================ -->
+        ============================================ -->
+
+        @stack('scripts')
+
+        <!-- summer note scripts -->
+        <!-- summer script ends right here -->
     <script src="{{ asset('app-js/calendar/moment.min.js') }}"></script>
     <script src="{{ asset('app-js/calendar/fullcalendar.min.js') }}"></script>
     <script src="{{ asset('app-js/calendar/fullcalendar-active.js') }}"></script>
+
+    <!-- tab JS
+    ============================================ -->
+    <script src="{{ asset('app-js/tab.js') }}"></script>
     <!-- plugins JS
 		============================================ -->
     <script src="{{ asset('app-js/plugins.js') }}"></script>

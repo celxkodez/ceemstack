@@ -69,12 +69,12 @@
                     <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
                         <div class="product-payment-inner-st res-mg-t-30 analysis-progrebar-ctn">
                             <ul id="myTabedu1" class="tab-review-design">
-                                <li class="active"><a href="#description">Activity</a></li>
+                                <li ><a href="#description">Activity</a></li>
                                 <li><a href="#reviews"> Biography</a></li>
-                                <li><a href="#INFORMATION">Update Details</a></li>
+                                <li class="active"><a href="#INFORMATION">Update Details</a></li>
                             </ul>
                             <div id="myTabContent" class="tab-content custom-product-edit st-prf-pro">
-                                <div class="product-tab-list tab-pane fade active in" id="description">
+                                <div class="product-tab-list tab-pane fade in" id="description">
                                     <div class="row">
                                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                             <div class="review-content-section">
@@ -349,7 +349,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="product-tab-list tab-pane fade" id="INFORMATION">
+                                <div class="product-tab-list tab-pane active fade in" id="INFORMATION">
                                     <div class="row">
                                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                             <div class="review-content-section">

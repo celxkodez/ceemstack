@@ -76,7 +76,8 @@ class RegisterController extends Controller
 
         User_profile::create([
 
-            'user_id' => $user->id
+            'user_id' => $user->id,
+            'avater' => 'uploads/user/avatars/avatar.png'
 
         ]);
 

@@ -62,9 +62,14 @@ Route::group(['middleware' => 'auth'], function(){
 
 
   // for the post
-  Route::post('/post.create', [
+  Route::get('/post/create', [
     'uses' => 'PostController@create',
     'as' => 'post.create'
+  ]);
+
+  Route::post('/post/store', [
+    'uses' => 'PostController@store',
+    'as' => 'post.store'
   ]);
 
   Route::get('/posts', [

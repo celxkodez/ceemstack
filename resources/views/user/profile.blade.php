@@ -9,13 +9,13 @@
                     <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                         <div class="profile-info-inner">
                             <div class="profile-img">
-                                <img src="img/profile/1.jpg" alt="" />
+                                <img src="{{Auth::user()->profile->avater }}" alt="" />
                             </div>
                             <div class="profile-details-hr">
                                 <div class="row">
                                     <div class="col-lg-6 col-md-12 col-sm-12 col-xs-6">
                                         <div class="address-hr">
-                                            <p><b>Name</b><br /> Fly Zend</p>
+                                            <p><b>Name</b><br /> {{Auth::user()->name}}</p>
                                         </div>
                                     </div>
                                     <div class="col-lg-6 col-md-12 col-sm-12 col-xs-6">
@@ -27,7 +27,7 @@
                                 <div class="row">
                                     <div class="col-lg-6 col-md-12 col-sm-12 col-xs-6">
                                         <div class="address-hr">
-                                            <p><b>Email ID</b><br /> fly@gmail.com</p>
+                                            <p><b>Email ID</b><br /> {{Auth::user()->email}}</p>
                                         </div>
                                     </div>
                                     <div class="col-lg-6 col-md-12 col-sm-12 col-xs-6">
@@ -69,10 +69,13 @@
                     <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
                         <div class="product-payment-inner-st res-mg-t-30 analysis-progrebar-ctn">
                             <ul id="myTabedu1" class="tab-review-design">
-                                <li class="active"><a href="#description">Activity</a></li>
-                                <li><a href="#reviews"> Biography</a></li>
+                                <li class="active"><a href="#description">Profile</a></li>
+                                <!-- <li><a href="#reviews"> Biography</a></li> -->
                                 <li>
-                                  <a href="{{ route('profile.edit') }}">Update Details</a>
+                                  <a href="#INFORMATION" onclick="console.log(event)">
+                                    Update Details
+                                    <!-- <a href=""></a> -->
+                                  </a>
                                 </li>
                             </ul>
                             <div id="myTabContent" class="tab-content custom-product-edit st-prf-pro">
@@ -83,7 +86,7 @@
                                                 <div class="row">
                                                     <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
                                                         <div class="address-hr biography">
-                                                            <p><b>Full Name</b><br /> Fly Zend</p>
+                                                            <p><b>Full Name</b><br /> {{Auth::user()->name}}</p>
                                                         </div>
                                                     </div>
                                                     <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
@@ -105,12 +108,8 @@
                                                 <div class="row">
                                                     <div class="col-lg-12">
                                                         <div class="content-profile">
-                                                            <p>Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt.Cras
-                                                                dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim.</p>
-                                                            <p>Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt.Cras
-                                                                dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim.</p>
-                                                            <p>Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt.Cras
-                                                                dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim.</p>
+                                                          <h1>Bio</h1>
+                                                          <p>{{Auth::user()->profile->bio}}</p>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -217,7 +216,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="product-tab-list tab-pane fade" id="reviews">
+                                <!-- <div class="product-tab-list tab-pane fade" id="reviews">
                                     <div class="row">
                                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                             <div class="review-content-section">
@@ -350,8 +349,8 @@
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                                <!-- <div class="product-tab-list tab-pane fade" id="INFORMATION">
+                                </div> -->
+                                <div class="product-tab-list tab-pane fade" id="INFORMATION">
                                     <div class="row">
                                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                             <div class="review-content-section">
@@ -447,7 +446,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                </div> -->
+                                </div>
                             </div>
                         </div>
                     </div>
