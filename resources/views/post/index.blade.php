@@ -1,7 +1,9 @@
-@extends('layout.auth.app')
+@extends('layouts.auth-layout.app')
 
 
 @section('contents')
+
+  <div>All posts in here</div>
 
 
 

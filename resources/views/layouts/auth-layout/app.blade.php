@@ -11,7 +11,7 @@
 
 
 <!doctype html>
-<html class="no-js" lang="str_replace('_', '-', app()->getLocale()) }}">
+<html class="no-js" lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 
 <head>
     <meta charset="utf-8">
@@ -441,7 +441,7 @@
                                                 </li>
                                                 <li class="nav-item">
                                                     <a href="#" data-toggle="dropdown" role="button" aria-expanded="false" class="nav-link dropdown-toggle">
-															<img src="{{ Auth::user()->profile->avater }}" alt="" />
+															<img src="{{ asset(Auth::user()->profile->avater) }}" alt="" />
 															<span class="admin-name">{{ Auth::user()->name}}</span>
 															<i class="fa fa-angle-down edu-icon edu-down-arrow"></i>
 														</a>
@@ -1708,8 +1708,48 @@
     
     <!-- Notification js -->
 
-    <script src="js/notifications/Lobibox.js"></script>
-    <script src="js/notifications/notification-active.js"></script>
+    <script src="{{ asset('app-js/notifications/Lobibox.js') }}"></script>
+    <!-- <script src="{{asset('app-js/notifications/notification-active.js') }}"></script> -->
+    
+        @if(Session::has('success'))
+            <script>
+                Lobibox.notify('success', {
+                    showClass: 'rollIn',
+                    hideClass: 'rollOut',
+                    msg: "{{ Session::get('success') }}"
+                });
+            </script>
+        @endif
+
+        @if(Session::has('info'))
+            <script>
+                Lobibox.notify('info', {
+                    showClass: 'fadeInDown',
+                    hideClass: 'fadeUpDown',
+                    msg: "{{ Session::get('info') }}"
+                });
+            </script>
+        @endif
+
+        @if(Session::has('warning'))
+            <script>
+                Lobibox.notify('warning', {
+                    showClass: 'bounceIn',
+                    hideClass: 'bounceOut',
+                    msg: "{{ Session::get('warning') }}"
+                });
+            </script>
+        @endif
+
+        @if(Session::has('error'))
+            <script>
+                Lobibox.notify('error', {
+                    showClass: 'zoomInUp',
+                    hideClass: 'zoomOutDown',
+                    msg: "{{ Session::get('error') }}"
+            </script>
+        @endif
+
 
     <!-- morrisjs JS
 		============================================ -->
