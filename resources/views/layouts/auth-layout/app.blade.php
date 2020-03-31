@@ -61,6 +61,10 @@
 		============================================ -->
     <link rel="stylesheet" href="{{ asset('app-css/metisMenu/metisMenu.min.css') }}">
     <link rel="stylesheet" href="{{ asset('app-css/metisMenu/metisMenu-vertical.css') }}">
+    <!-- notifications CSS
+    ============================================ -->
+    <link rel="stylesheet" href="{{ asset('app-css/notifications/Lobibox.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('app-css/notifications/notifications.css') }}">
     <!-- calendar CSS
 		============================================ -->
     <link rel="stylesheet" href="{{ asset('app-css/calendar/fullcalendar.min.css') }}">
@@ -1701,6 +1705,12 @@
     <script src="{{asset('app-js/morrisjs/raphael-min.js') }}"></script>
     <script src="{{asset('app-js/morrisjs/morris.js') }}"></script>
     <script src="{{asset('app-js/morrisjs/morris-active.js') }}"></script>
+    
+    <!-- Notification js -->
+
+    <script src="js/notifications/Lobibox.js"></script>
+    <script src="js/notifications/notification-active.js"></script>
+
     <!-- morrisjs JS
 		============================================ -->
     <script src="{{ asset('app-js/sparkline/jquery.sparkline.min.js') }}"></script>

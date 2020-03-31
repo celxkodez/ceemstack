@@ -3,6 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Post;
+use Session;
+use Auth;
 
 class PostController extends Controller
 {
@@ -41,7 +44,22 @@ class PostController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        
+        $this->validate($request, [
+            'post_title' => 'required|max:255',
+        ]);
+
+        Post::create([
+            'post_title' => $request->post_title,
+            'post_body' => $request->post_body,
+            'code' => $request->code,
+            'poster_id' => Auth::user()->id
+        ]);
+
+        Session::flash('success', 'Post Created Successfully');
+
+
+        return redirect()->route('posts');
     }
 
     /**
