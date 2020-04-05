@@ -66,7 +66,7 @@
               </div>
             
               <div class="m-5 text-left form-wrapper">
-                <form class="mx-auto" action="{{ route('post.store') }}" method="post">
+                <form class="mx-auto" action="{{ route('post.store') }}" method="post" enctype="multipart/form-data">
                   @csrf
                   <div class="form-group">
                     <input type="text" name="post_title" class="form-control" placeholder="Post Title">
@@ -74,7 +74,7 @@
                   <div class="form-group">
 
                   
-                    <textarea placeholder="Write Your Post Here" class="form-control" id="summernote" name="post_body"></textarea>
+                    <textarea placeholder="Write Your Post Here" class="form-control" id="ssummernote" name="post_body"></textarea>
                   </div>
 
                   <div class="code-edit padtop-3 padbot-3 modal-area-button">
@@ -88,6 +88,22 @@
 
 
                   </div>
+                  <div class="file-upload-inner ts-forms form-group">
+                    <!-- <label for=""> </label> -->
+                      <div class="input prepend-big-btn">
+                          <label class="icon-right" for="prepend-big-btn">
+                              <i class="fa fa-download"></i>
+                            </label>
+                          <div class="file-button">
+                              Browse
+                              <input name="post_img" type="file" onchange="document.getElementById('prepend-big-btn').value = this.value;">
+                          </div>
+                          <input type="text" id="prepend-big-btn" placeholder="Attach a screenshot of your errors or code">
+                      </div>
+
+                      <!-- <input name="post_img" type="file" > -->
+                  </div>
+
                   <div id="codeEditor" class="modal modal-edu-general default-popup-PrimaryModal PrimaryModal-bgcolor fade" role="dialog">
                     <div class="modal-dialog">
                         <div class="modal-content">
@@ -117,40 +133,10 @@
                         </div>
                     </div>
                   </div>
-                  <!-- <div class="code-editor-area mg-b-15">
-                    <div class="container-fluid">
-                        <div class="row">
-                          <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                              <div class="code-editor-single responsive-mg-b-30">
-                                  <h2>Code Editor Style One</h2>
-                                  <textarea id="code1">
-                                      <script>
-                                          $(document).ready(function() {
-
-                                              var editor_one = CodeMirror.fromTextArea(document.getElementById("code1"), {
-                                                  lineNumbers: true,
-                                                  matchBrackets: true,
-                                                  styleActiveLine: true,
-                                                  theme: "ambiance"
-                                              });
-
-                                              var editor_two = CodeMirror.fromTextArea(document.getElementById("code2"), {
-                                                  lineNumbers: true,
-                                                  matchBrackets: true,
-                                                  styleActiveLine: true
-                                              });
-
-                                          });
-                                      </script>
-                                  </textarea>
-                              </div>
-                          </div>
-                        </div>
-                    </div>
-                  </div> -->
 
 
-                  <div class="form-group p4">
+
+                  <div class="form-group p4 mt4 p-4">
                     <label for="category">Select Category:</label>
 
                     <select class="form-control" name="category" id="category">

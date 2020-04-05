@@ -6,6 +6,9 @@ use Illuminate\Http\Request;
 use App\Post;
 use Session;
 use Auth;
+// use Illuminate\Http\Concerns\InteractsWithInput;
+
+
 
 class PostController extends Controller
 {
@@ -23,7 +26,8 @@ class PostController extends Controller
 
     public function index()
     {
-        return view('post.index');
+        return view('post.index')
+                ->with('posts', Post::all());
     }
 
     /**
@@ -47,14 +51,54 @@ class PostController extends Controller
         
         $this->validate($request, [
             'post_title' => 'required|max:255',
+            'post_body' => 'required',
+            'post_img' => 'image'
         ]);
 
-        Post::create([
-            'post_title' => $request->post_title,
-            'post_body' => $request->post_body,
-            'code' => $request->code,
-            'poster_id' => Auth::user()->id
-        ]);
+        
+
+
+
+        // dd($request);
+
+        // $request->has
+        if($request->hasFile('post_img')){
+            $post_img = $request->post_img;
+
+
+            // dd($post_img);
+
+            // dd($request->request);
+            $post_img_new_name = time() . $post_img->getClientOriginalName();
+    
+            $post_img->move('uploads/posts', $post_img_new_name);
+
+
+
+            Post::create([
+                'post_title' => $request->post_title,
+                'post_body' => $request->post_body,
+                'post_img' => 'uploads/posts/'.$post_img_new_name,
+                'code' => $request->code,
+                'poster_id' => Auth::user()->id,
+                'poster_name' => Auth::user()->name,
+                'slug' => str_replace(' ', '-', $request->post_title)
+            ]);
+        }else {
+
+            // dd($request->post_img);
+            Post::create([
+                'post_title' => $request->post_title,
+                'post_body' => $request->post_body,
+                // 'post_img' => 'uploads/posts'.$post_img_new_name,
+                'code' => $request->code,
+                'poster_id' => Auth::user()->id,
+                'poster_name' => Auth::user()->name,
+                'slug' => str_replace(' ', '-', $request->post_title)
+            ]);
+        }
+
+        // str_repla    
 
         Session::flash('success', 'Post Created Successfully');
 

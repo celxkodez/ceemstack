@@ -1,5 +1,6 @@
 <?php
 
+use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
@@ -20,8 +21,11 @@ class CreatePostsTable extends Migration
             $table->text('post_body');
             $table->integer('category_id')->nullable();
             $table->integer('poster_id');
+            $table->string('poster_name');
             $table->text('code')->nullable();
             $table->string('post_img')->nullable();
+            $table->string('slug')->nullable();
+            $table->SoftDeletes();
             $table->timestamps();
         });
     }
