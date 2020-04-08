@@ -120,28 +120,23 @@
                             </ul>
                         </li>
                          <li>
-                            <a title="Profile" href="{{ route('profile') }}" aria-expanded="false">
-                                <!-- <span class="educate-icon educate-event icon-wrap sub-icon-mg" aria-hidden="true"></span>  -->
-                                <!-- <i class="fa fa-user icon-wrap sub-icon-mg" aria-hidden="true"></i> -->
-                                
-                                <span class="mini-click-non">Profile</span>
+                            <a title="Teams" href="{{ route('teams') }}" aria-expanded="false">
+
+                                <i class="fa fa-users" aria-hidden="true"></i>
+                                <span class="mini-click-non">Teams</span>
                             </a>
                         </li>
 
                         <li>
-                            <a title="Profile" href="{{ route('profile') }}" aria-expanded="false">
-                                <!-- <span class="educate-icon educate-event icon-wrap sub-icon-mg" aria-hidden="true"></span>  -->
-                                <!-- <i class="fa fa-user icon-wrap sub-icon-mg" aria-hidden="true"></i> -->
-                                <!-- <i class="fas fa-object-group    "></i> -->
-                                <i class="fa fa-object-group" aria-hidden="true"></i>
+                            <a title="Categories" href="" aria-expanded="false">
+                                <i class="fa fa-list" aria-hidden="true"></i>
                                 <span class="mini-click-non">Categories</span>
                             </a>
                         </li>
 
                         <li>
                             <a title="Tags" href="" aria-expanded="false">
-                                <!-- <span class="educate-icon educate-event icon-wrap sub-icon-mg" aria-hidden="true"></span>  -->
-                                <!-- <i class="fa fa-user icon-wrap sub-icon-mg" aria-hidden="true"></i> -->
+                               
                                 <i class="fa fa-tags" aria-hidden="true"></i>
                                 <span class="mini-click-non">Tags</span>
                             </a>
@@ -149,8 +144,9 @@
 
                         <li>
                             <a title="Profile" href="{{ route('profile') }}" aria-expanded="false">
-                                <!-- <span class="educate-icon educate-event icon-wrap sub-icon-mg" aria-hidden="true"></span>  -->
-                                <i class="fa fa-user icon-wrap sub-icon-mg" aria-hidden="true"></i>
+                    
+                                <i class="fa fa-user " aria-hidden="true"></i>
+                                <!-- icon-wrap sub-icon-mg blongs to  -->
                                 <span class="mini-click-non">Profile</span>
                             </a>
                         </li>

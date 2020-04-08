@@ -52,6 +52,15 @@ Route::group(['Prefix' => 'Mentor', 'middleware' => 'Mentor'], function(){
     'as' => 'team.update'
   ]);
 
+  Route::get('/team', [
+    'uses' => 'TeamController@index',
+    'as' => 'teams'
+  ]);
+
+
+  // for the index view of all teams
+
+
 
 });
 

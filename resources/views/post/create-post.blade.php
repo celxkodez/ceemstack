@@ -62,7 +62,7 @@
         <div class="row">
             <div class="col-lg-8 col-md-11 ml-5 col-sm-11 col-xs-11">
               <div> 
-              <h1>Create Post</h1>
+                <h1>Create Post</h1>
               </div>
             
               <div class="m-5 text-left form-wrapper">
