@@ -3,8 +3,8 @@
 namespace App\Http\Middleware;
 
 use Closure;
-use Illuminate\Support\Facades\Auth;
-// use Auth;
+// use Illuminate\Support\Facades\Auth;
+use Auth;
 use Session;
 // use Symfony\Component\HttpFoundation\Session\Session;
 
@@ -21,7 +21,7 @@ class Mentor
     public function handle($request, Closure $next)
     {
 
-        if(Auth::user()->role == 1 ){
+        if(Auth::user()->role == 0  ){
 
             Session::flash('warning', 'You do not have the required permissions to do this');
 

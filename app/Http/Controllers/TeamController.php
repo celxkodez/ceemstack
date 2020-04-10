@@ -4,6 +4,9 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
+
+use Session;
+
 use App\Team;
 
 class TeamController extends Controller
@@ -19,7 +22,7 @@ class TeamController extends Controller
         
 
         return view('team.index')
-                        ->with('team', Team::all());
+                        ->with('teams', Team::all());
     }
 
     /**
@@ -29,8 +32,11 @@ class TeamController extends Controller
      */
     public function create()
     {
-        //
+        
     }
+
+
+
 
     /**
      * Store a newly created resource in storage.
@@ -40,7 +46,20 @@ class TeamController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $this->validate($request, [
+            'team_name' => 'required|string|max:100'
+        ]);
+
+
+
+        Team::create([
+            'team' => $request->team_name
+        ]);
+
+
+        Session::flash('success', 'Your team has been created successfully');
+
+        return redirect()->back();
     }
 
     /**
@@ -85,6 +104,13 @@ class TeamController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $team = Team::find($id);
+
+        $team = $team->team;
+        Team::destroy($id);
+
+        Session::flash('success', "Team $team Deleted!");
+
+        return redirect()->back();
     }
 }

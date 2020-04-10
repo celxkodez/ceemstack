@@ -35,10 +35,10 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 
 //THIS GROUPS BELONGS TO EVERY MENTORS ACTIONS AND PREVILLEDGES
-Route::group(['Prefix' => 'Mentor', 'middleware' => 'Mentor'], function(){
+Route::group(['Prifix' => 'Mentor', 'middleware' => 'mentor'], function(){
 
   Route::post('/team/create', [
-    'uses' => 'TeamController@create',
+    'uses' => 'TeamController@store',
     'as' => 'team.create'
   ]);
 
