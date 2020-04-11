@@ -112,6 +112,12 @@ Route::group(['middleware' => 'auth'], function(){
     'as' => 'team.join'
   ]);
 
+  Route::get('/team/leave/{id}', [
+    'uses' => 'TeamController@leaveTeam',
+    'as' => 'team.leave'
+  ]);
+
+
   //for user profile actions
 
   Route::get('/profile', [
@@ -128,3 +134,12 @@ Route::group(['middleware' => 'auth'], function(){
   
 
 });
+
+
+
+
+// FOR ONLY TESTING PURPOSES
+Route::get('/test', [
+  'uses' => 'TestsController@test',
+  'as' => 'tests'
+]);

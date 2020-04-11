@@ -130,6 +130,21 @@ class TeamController extends Controller
 
         return redirect()->back();
     }
+
+            /**
+     * Allow users to leave a Particular team.
+     *
+     * 
+     */
+    public function leaveTeam($id)
+    {
+        $team = Team::find($id);
+        Auth::user()->teams()->asyb($id);
+
+        Session::flash('success', "You left $team->team successfully!");
+
+        return redirect()->back();
+    }
 }
 
 

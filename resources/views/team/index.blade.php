@@ -53,10 +53,18 @@
                                             
                                             <td class="text-left">{{ $team->team }}</td>
                                             <td>
-                                              <a href="{{ route('team.join', ['id' => $team->id]) }}" class="btn btn-success">
-                                                <i class="fa fa-plus" aria-hidden="true"></i>  
-                                              Join Team
-                                              </a>
+                                              @if(!$team->userIsAlreadyInTeam(Auth::user()->id, $team->id))
+                                                <a href="{{ route('team.join', ['id' => $team->id]) }}" class="btn btn-success">
+                                                  <i class="fa fa-plus" aria-hidden="true"></i>  
+                                                  Join Team
+                                                </a>
+                                              @else
+
+                                                  <a href="{{ route('team.leave', ['id' => $team->id]) }}" class="btn btn-success">
+                                                    <i class="fa fa-plus" aria-hidden="true"></i>  
+                                                    Leaave Team
+                                                  </a>
+                                              @endif
                                             </td>
                                             @if(Auth::user()->role > 0)
                                               <td>
