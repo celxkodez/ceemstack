@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-
+use Auth;
 use Session;
 
 use App\Team;
@@ -34,6 +34,8 @@ class TeamController extends Controller
     {
         
     }
+
+
 
 
 
@@ -113,4 +115,23 @@ class TeamController extends Controller
 
         return redirect()->back();
     }
+
+        /**
+     * Allow users to join a Particular team.
+     *
+     * 
+     */
+    public function joinTeam($id)
+    {
+        $team = Team::find($id);
+        Auth::user()->teams()->attach($id);
+
+        Session::flash('success', "$team->team Joined Successful!");
+
+        return redirect()->back();
+    }
 }
+
+
+
+

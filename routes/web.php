@@ -108,7 +108,7 @@ Route::group(['middleware' => 'auth'], function(){
   ]);
 
   Route::get('/team/join/{id}', [
-    'uses' => 'TeamController@join',
+    'uses' => 'TeamController@joinTeam',
     'as' => 'team.join'
   ]);
 

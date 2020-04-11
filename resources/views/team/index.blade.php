@@ -53,7 +53,7 @@
                                             
                                             <td class="text-left">{{ $team->team }}</td>
                                             <td>
-                                              <a href="" class="btn btn-success">
+                                              <a href="{{ route('team.join', ['id' => $team->id]) }}" class="btn btn-success">
                                                 <i class="fa fa-plus" aria-hidden="true"></i>  
                                               Join Team
                                               </a>
