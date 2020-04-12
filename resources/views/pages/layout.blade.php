@@ -117,7 +117,7 @@
 
         <div class="landing-page-content">
 
-          <div class="row block-container">
+          <!-- <div class="row block-container"> -->
 
 
           
@@ -125,34 +125,34 @@
           <!-- ************LEARN PART ENDS RIGHT HERE*********** -->
 
 
-          <div class="row mb-3">
-              <div class="col-12 col-md-6 text-center my-auto order-md-2">
-                  <h1>Learn</h1>
-                  <p>
-                    New bee? learn with by building real world application
-                    through mentorship and materials provided.
-      
-                  </p>
-                  <a class="mx-5 w-50 btn btn-primary font-weight-bold " href=""> 
-                    <i class="fas fa-hand-point-right    "></i>
-                  </a>
-                </div>
-      
-                <div class="col-12 col-md-6 text-center order-md-1">
-                  <div class="text-center m-auto w-50">
-                      <img class=" w-100" src="img/images/learn.svg" alt="">
-                    <!-- <div class="position-relative h-100 text-center mr-auto ">
-                      <img class=" img-responsive w-100 " src="img/learn.png" alt="">
-                      <div class=" position-absolute w-100 first-animated h-100 text-center">
-                        <div class="animated-div position-relative  w-100 text-center mx-auto ">
-                          <a href="#" class="animated-div-child font-weight-bold">Start</a>
-                         
-                        </div>
-                      </div>
-                    </div> -->
+            <div class="row mb-3">
+                <div class="col-12 col-md-6 text-center my-auto order-md-2">
+                    <h1>Learn</h1>
+                    <p>
+                      New bee? learn with by building real world application
+                      through mentorship and materials provided.
+        
+                    </p>
+                    <a class="mx-5 w-50 btn btn-primary font-weight-bold " href=""> 
+                      <i class="fas fa-hand-point-right    "></i>
+                    </a>
                   </div>
-                </div>
-          </div>
+        
+                  <div class="col-12 col-md-6 text-center order-md-1">
+                    <div class="text-center m-auto w-50">
+                        <img class=" w-100" src="img/images/learn.svg" alt="">
+                      <!-- <div class="position-relative h-100 text-center mr-auto ">
+                        <img class=" img-responsive w-100 " src="img/learn.png" alt="">
+                        <div class=" position-absolute w-100 first-animated h-100 text-center">
+                          <div class="animated-div position-relative  w-100 text-center mx-auto ">
+                            <a href="#" class="animated-div-child font-weight-bold">Start</a>
+                          
+                          </div>
+                        </div>
+                      </div> -->
+                    </div>
+                  </div>
+            </div>
 
 
 
@@ -163,33 +163,33 @@
 
 
 
-           <div class="row mb-3">
-              <div class="col-12 col-md-6 text-center my-auto mt-5 order-md-1">
-                  <h1>Projects</h1>
-                  <p>
-                    Join in building real life for people and also earn and learn while 
-                    collaborating to build projects.
-      
-                  </p>
-                  <a class="mx-5 w-50 btn btn-primary font-weight-bold " href=""> 
-                    <i class="fas fa-hand-point-right    "></i>
-                  </a>
-                </div>
-      
-                <div class="col-12 col-md-6 text-center mt-5 order-md-2">
-                  <div class="text-center m-auto w-50">
-                      <img class=" w-100" src="img/images/organizing-projects.svg" alt="">
-                    <!-- <div class="position-relative h-100 text-center mr-auto ">
-                      <img class=" img-responsive w-100 " src="img/learn.png" alt="">
-                      <div class=" position-absolute w-100 first-animated h-100 text-center">
-                        <div class="animated-div position-relative  w-100 text-center mx-auto ">
-                          <a href="#" class="animated-div-child font-weight-bold">Start</a>
-                        </div>
-                      </div>
-                    </div> -->
+            <div class="row mb-3">
+                <div class="col-12 col-md-6 text-center my-auto mt-5 order-md-1">
+                    <h1>Projects</h1>
+                    <p>
+                      Join in building real life for people and also earn and learn while 
+                      collaborating to build projects.
+        
+                    </p>
+                    <a class="mx-5 w-50 btn btn-primary font-weight-bold " href=""> 
+                      <i class="fas fa-hand-point-right    "></i>
+                    </a>
                   </div>
-                </div>
-           </div>
+        
+                  <div class="col-12 col-md-6 text-center mt-5 order-md-2">
+                    <div class="text-center m-auto w-50">
+                        <img class=" w-100" src="img/images/organizing-projects.svg" alt="">
+                      <!-- <div class="position-relative h-100 text-center mr-auto ">
+                        <img class=" img-responsive w-100 " src="img/learn.png" alt="">
+                        <div class=" position-absolute w-100 first-animated h-100 text-center">
+                          <div class="animated-div position-relative  w-100 text-center mx-auto ">
+                            <a href="#" class="animated-div-child font-weight-bold">Start</a>
+                          </div>
+                        </div>
+                      </div> -->
+                    </div>
+                  </div>
+            </div>
   
 
           <!-- ***************PROJECTS PARTS ENDS RIGHT HERE*********** -->
@@ -200,34 +200,34 @@
 
 
 
-          <div class="row mb-3">
-              <div class="col-12 col-md-6 text-center my-auto mt-5 slideanim order-md-2">
-                  <h1>Source Codes</h1>
-                  <p>
-                    Dont like building from scratch? dont worry,
-                    Get Source codes to existing projects. 
-      
-                  </p>
-                  <a class="mx-5 w-50 btn btn-primary font-weight-bold " href=""> 
-                    <i class="fas fa-hand-point-right    "></i>
-                  </a>
-                </div>
-      
-                <div class="col-12 col-md-6 text-center mt-5 slideanim order-md-1">
-                  <div class="text-center m-auto w-50">
-                      <img class=" w-100" src="img/images/source-code.svg" alt="">
-                    <!-- <div class="position-relative h-100 text-center mr-auto ">
-                      <img class=" img-responsive w-100 " src="img/learn.png" alt="">
-                      <div class=" position-absolute w-100 first-animated h-100 text-center">
-                        <div class="animated-div position-relative  w-100 text-center mx-auto ">
-                          <a href="#" class="animated-div-child font-weight-bold">Start</a>
-                            <button class="btn btn-lg btn-primary animated-div-child">Start</button>
-                        </div>
-                      </div>
-                    </div> -->
+            <div class="row mb-3">
+                <div class="col-12 col-md-6 text-center my-auto mt-5 slideanim order-md-2">
+                    <h1>Source Codes</h1>
+                    <p>
+                      Dont like building from scratch? dont worry,
+                      Get Source codes to existing projects. 
+        
+                    </p>
+                    <a class="mx-5 w-50 btn btn-primary font-weight-bold " href=""> 
+                      <i class="fas fa-hand-point-right    "></i>
+                    </a>
                   </div>
-                </div>
-          </div>
+        
+                  <div class="col-12 col-md-6 text-center mt-5 slideanim order-md-1">
+                    <div class="text-center m-auto w-50">
+                        <img class=" w-100" src="img/images/source-code.svg" alt="">
+                      <!-- <div class="position-relative h-100 text-center mr-auto ">
+                        <img class=" img-responsive w-100 " src="img/learn.png" alt="">
+                        <div class=" position-absolute w-100 first-animated h-100 text-center">
+                          <div class="animated-div position-relative  w-100 text-center mx-auto ">
+                            <a href="#" class="animated-div-child font-weight-bold">Start</a>
+                              <button class="btn btn-lg btn-primary animated-div-child">Start</button>
+                          </div>
+                        </div>
+                      </div> -->
+                    </div>
+                  </div>
+            </div>
 
 
         <!-- ***************SOURCE CODES PARTS ENDS RIGHT HERE*********** -->
@@ -312,33 +312,33 @@
 
             <!-- ***************GET A TEAM PARTS STARTS RIGHT HERE*********** -->
 
-            <div class="row mb-3">
-                <div class="col-12 col-md-6 text-center my-auto mt-5 slideanim order-md-1">
-                    <h1>Get a Team</h1>
-                    <p>
-                      Create or Join a team of other programmers in building 
-                      Products.
-        
-                    </p>
-                    <a class="mx-5 w-50 btn btn-primary font-weight-bold " href="{{route('teams') }}"> 
-                      <i class="fas fa-hand-point-right    "></i>
-                    </a>
-                  </div>
-        
-                  <div class="col-12 col-md-6 text-center mt-5 slideanim order-md-2">
-                    <div class="text-center m-auto w-50">
-                      <img class=" w-100" src="img/images/work-together.svg" alt="">
-                      <!-- <div class="position-relative h-100 text-center mr-auto ">
-                        <img class=" img-responsive w-100 " src="img/images/work-together.svg" alt="">
-                        <div class=" position-absolute w-100 first-animated h-100 text-center">
-                          <div class="animated-div position-relative  w-100 text-center mx-auto ">
-                            <a href="#" class="animated-div-child font-weight-bold">Start</a>
-                          </div>
-                        </div>
-                      </div> -->
+              <div class="row mb-3">
+                  <div class="col-12 col-md-6 text-center my-auto mt-5 slideanim order-md-1">
+                      <h1>Get a Team</h1>
+                      <p>
+                        Create or Join a team of other programmers in building 
+                        Products.
+          
+                      </p>
+                      <a class="mx-5 w-50 btn btn-primary font-weight-bold " href="{{route('teams') }}"> 
+                        <i class="fas fa-hand-point-right    "></i>
+                      </a>
                     </div>
-                  </div>
-            </div>
+          
+                    <div class="col-12 col-md-6 text-center mt-5 slideanim order-md-2">
+                      <div class="text-center m-auto w-50">
+                        <img class=" w-100" src="img/images/work-together.svg" alt="">
+                        <!-- <div class="position-relative h-100 text-center mr-auto ">
+                          <img class=" img-responsive w-100 " src="img/images/work-together.svg" alt="">
+                          <div class=" position-absolute w-100 first-animated h-100 text-center">
+                            <div class="animated-div position-relative  w-100 text-center mx-auto ">
+                              <a href="#" class="animated-div-child font-weight-bold">Start</a>
+                            </div>
+                          </div>
+                        </div> -->
+                      </div>
+                    </div>
+              </div>
 
 
 
@@ -351,34 +351,34 @@
 
 
 
-           <div class="row mb-3">
-              <div class="col-12 col-md-6 text-center my-auto mt-5 slideanim order-md-2">
-                  <h1>challenges</h1>
-                  <p>
-                    Be part of the code war. Join the Code challenge for better 
-                    and smartness in codes implemetation.
-      
-                  </p>
-                  <a class="mx-5 w-50 btn btn-primary font-weight-bold " href=""> 
-                    <i class="fas fa-hand-point-right    "></i>
-                  </a>
-                </div>
-      
-                <div class="col-12 col-md-6 text-center mt-5 slideanim order-md-1">
-                  <div class="text-center m-auto w-50">
-                      <img class=" w-100" src="img/images/to-do.svg" alt="">
-                    <!-- <div class="position-relative h-100 text-center mr-auto ">
-                      <img class=" img-responsive w-100 " src="img/learn.png" alt="">
-                      <div class=" position-absolute w-100 first-animated h-100 text-center">
-                        <div class="animated-div position-relative  w-100 text-center mx-auto ">
-                          <a href="#" class="animated-div-child font-weight-bold">Start</a>
-                            
-                        </div>
-                      </div>
-                    </div> -->
+            <div class="row mb-3">
+                <div class="col-12 col-md-6 text-center my-auto mt-5 slideanim order-md-2">
+                    <h1>challenges</h1>
+                    <p>
+                      Be part of the code war. Join the Code challenge for better 
+                      and smartness in codes implemetation.
+        
+                    </p>
+                    <a class="mx-5 w-50 btn btn-primary font-weight-bold " href=""> 
+                      <i class="fas fa-hand-point-right    "></i>
+                    </a>
                   </div>
-                </div>
-           </div>
+        
+                  <div class="col-12 col-md-6 text-center mt-5 slideanim order-md-1">
+                    <div class="text-center m-auto w-50">
+                        <img class=" w-100" src="img/images/to-do.svg" alt="">
+                      <!-- <div class="position-relative h-100 text-center mr-auto ">
+                        <img class=" img-responsive w-100 " src="img/learn.png" alt="">
+                        <div class=" position-absolute w-100 first-animated h-100 text-center">
+                          <div class="animated-div position-relative  w-100 text-center mx-auto ">
+                            <a href="#" class="animated-div-child font-weight-bold">Start</a>
+                              
+                          </div>
+                        </div>
+                      </div> -->
+                    </div>
+                  </div>
+            </div>
   
 
           <!-- ***************PROJECTS PARTS ENDS RIGHT HERE*********** -->
@@ -389,33 +389,33 @@
 
 
 
-          <div class="row mb-3">
-              <div class="col-12 col-md-6 text-center my-auto mt-5 slideanim order-md-1">
-                  <h1>Market</h1>
-                  <p>
-                    Got a product to sell or want to buy software product?
-                    checkout our market place to buy and sell applications
-      
-                  </p>
-                  <a class="mx-5 w-50 btn btn-primary font-weight-bold " href="{{ route('market') }}"> 
-                    <i class="fas fa-hand-point-right    "></i>
-                  </a>
-                </div>
-      
-                <div class="col-12 col-md-6 text-center mt-5 slideanim order-md-2">
-                  <div class="text-center m-auto w-50">
-                    <div class="position-relative h-100 text-center mr-auto ">
-                      <img class=" img-responsive w-100 " src="img/market.png" alt="">
-                      <div class=" position-absolute w-100 first-animated h-100 text-center">
-                        <div class="animated-div position-relative  w-100 text-center mx-auto ">
-                          <a href="#" class="animated-div-child font-weight-bold">Start</a>
-                            <!-- <button class="btn btn-lg btn-primary animated-div-child">Start</button> -->
+            <div class="row mb-3">
+                <div class="col-12 col-md-6 text-center my-auto mt-5 slideanim order-md-1">
+                    <h1>Market</h1>
+                    <p>
+                      Got a product to sell or want to buy software product?
+                      checkout our market place to buy and sell applications
+        
+                    </p>
+                    <a class="mx-5 w-50 btn btn-primary font-weight-bold " href="{{ route('buySell') }}"> 
+                      <i class="fas fa-hand-point-right    "></i>
+                    </a>
+                  </div>
+        
+                  <div class="col-12 col-md-6 text-center mt-5 slideanim order-md-2">
+                    <div class="text-center m-auto w-50">
+                      <div class="position-relative h-100 text-center mr-auto ">
+                        <img class=" img-responsive w-100 " src="img/market.png" alt="">
+                        <div class=" position-absolute w-100 first-animated h-100 text-center">
+                          <div class="animated-div position-relative  w-100 text-center mx-auto ">
+                            <a href="#" class="animated-div-child font-weight-bold">Start</a>
+                              <!-- <button class="btn btn-lg btn-primary animated-div-child">Start</button> -->
+                          </div>
                         </div>
-                      </div>
+                    </div>
+                    </div>
                   </div>
-                  </div>
-                </div>
-          </div>
+            </div>
   
 
           <!-- ***************MARKET PARTS ENDS RIGHT HERE*********** -->
@@ -425,33 +425,33 @@
 
 
 
-           <div class="row mb-3">
-              <div class="col-12 col-md-6 text-center my-auto mt-5 slideanim order-md-2">
-                  <h1>Announcement</h1>
-                  <p>
-                    Visit the announcement page for more informations and 
-                    more job postings.
-      
-                  </p>
-                  <a class="mx-5 w-50 btn btn-primary font-weight-bold " href=""> 
-                    <i class="fas fa-hand-point-right    "></i>
-                  </a>
-                </div>
-      
-                <div class="col-12 col-md-6 text-center mt-5 slideanim order-md-1">
-                  <div class="text-center m-auto w-50">
-                      <img class=" w-100" src="img/images/announcement.svg" alt="">
-                    <!-- <div class="position-relative h-100 text-center mr-auto ">
-                      <img class=" img-responsive w-100 " src="img/learn.png" alt="">
-                      <div class=" position-absolute w-100 first-animated h-100 text-center">
-                        <div class="animated-div position-relative  w-100 text-center mx-auto ">
-                          <a href="#" class="animated-div-child font-weight-bold">Start</a>
-                        </div>
-                      </div>
-                    </div> -->
+            <div class="row mb-3">
+                <div class="col-12 col-md-6 text-center my-auto mt-5 slideanim order-md-2">
+                    <h1>Announcement</h1>
+                    <p>
+                      Visit the announcement page for more informations and 
+                      more job postings.
+        
+                    </p>
+                    <a class="mx-5 w-50 btn btn-primary font-weight-bold " href=""> 
+                      <i class="fas fa-hand-point-right    "></i>
+                    </a>
                   </div>
-                </div>
-           </div>
+        
+                  <div class="col-12 col-md-6 text-center mt-5 slideanim order-md-1">
+                    <div class="text-center m-auto w-50">
+                        <img class=" w-100" src="img/images/announcement.svg" alt="">
+                      <!-- <div class="position-relative h-100 text-center mr-auto ">
+                        <img class=" img-responsive w-100 " src="img/learn.png" alt="">
+                        <div class=" position-absolute w-100 first-animated h-100 text-center">
+                          <div class="animated-div position-relative  w-100 text-center mx-auto ">
+                            <a href="#" class="animated-div-child font-weight-bold">Start</a>
+                          </div>
+                        </div>
+                      </div> -->
+                    </div>
+                  </div>
+            </div>
   
 
           <!-- ***************ANNOUNCEMENTPARTS ENDS RIGHT HERE*********** -->
@@ -461,35 +461,35 @@
 
 
 
-           <div class="row mb-3">
-              <div class="col-12 col-md-6 text-center my-auto mt-5 slideanim order-md-1">
-                  <h1>Help</h1>
-                  <p>
-                    Got questions? here is a big and great community to get help from
-                    and what ever it is in tech related field.
-                    
-      
-                  </p>
-                  <a class="mx-5 w-50 btn btn-primary font-weight-bold " href=""> 
-                    <i class="fas fa-hand-point-right    "></i>
-                  </a>
-                </div>
-      
-                <div class="col-12 col-md-6 text-center mt-5 slideanim order-md-2">
-                  <div class="text-center m-auto w-50">
-                      <img class=" w-100" src="img/images/question.svg" alt="">
-                    <!-- <div class="position-relative h-100 text-center mr-auto ">
-                      <img class=" img-responsive w-100 " src="img/help.jpg" alt="">
-                      <div class=" position-absolute w-100 first-animated h-100 text-center">
-                        <div class="animated-div position-relative  w-100 text-center mx-auto ">
-                          <a href="#" class="animated-div-child font-weight-bold">Start</a>
-                            
-                        </div>
-                      </div>
-                    </div> -->
+            <div class="row mb-3">
+                <div class="col-12 col-md-6 text-center my-auto mt-5 slideanim order-md-1">
+                    <h1>Help</h1>
+                    <p>
+                      Got questions? here is a big and great community to get help from
+                      and what ever it is in tech related field.
+                      
+        
+                    </p>
+                    <a class="mx-5 w-50 btn btn-primary font-weight-bold " href=""> 
+                      <i class="fas fa-hand-point-right    "></i>
+                    </a>
                   </div>
-                </div>
-           </div>
+        
+                  <div class="col-12 col-md-6 text-center mt-5 slideanim order-md-2">
+                    <div class="text-center m-auto w-50">
+                        <img class=" w-100" src="img/images/question.svg" alt="">
+                      <!-- <div class="position-relative h-100 text-center mr-auto ">
+                        <img class=" img-responsive w-100 " src="img/help.jpg" alt="">
+                        <div class=" position-absolute w-100 first-animated h-100 text-center">
+                          <div class="animated-div position-relative  w-100 text-center mx-auto ">
+                            <a href="#" class="animated-div-child font-weight-bold">Start</a>
+                              
+                          </div>
+                        </div>
+                      </div> -->
+                    </div>
+                  </div>
+            </div>
   
 
           <!-- ***************HELP PARTS ENDS RIGHT HERE*********** -->

@@ -143,3 +143,9 @@ Route::get('/test', [
   'uses' => 'TestsController@test',
   'as' => 'tests'
 ]);
+
+
+//For None authenticated users and for just pages 
+
+
+Route::get('/market', 'PagesController@market')->name('market');

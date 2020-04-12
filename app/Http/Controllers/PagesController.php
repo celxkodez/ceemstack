@@ -12,6 +12,10 @@ class PagesController extends Controller
     {
         return view('pages.index');
     }
+    public function market()
+    {
+        return view('pages.market');
+    }
 
     
 }
