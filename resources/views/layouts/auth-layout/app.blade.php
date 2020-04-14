@@ -105,7 +105,7 @@
                 <nav class="sidebar-nav left-sidebar-menu-pro">
                     <ul class="metismenu" id="menu1">
                         <li class="active">
-                            <a class="has-arrow" href="index.html">
+                            <a class="has-arrow" href="">
 								   <i class="fa fa-comment" aria-hidden="true"></i>
 								   <span class="mini-click-non">Post</span>
 								</a>
@@ -125,6 +125,18 @@
                                 <i class="fa fa-users" aria-hidden="true"></i>
                                 <span class="mini-click-non">Teams</span>
                             </a>
+                        </li>
+
+
+                        <li class="">
+                            <a class="has-arrow" href="">
+                                <i class="fa fa-shopping-basket" aria-hidden="true"></i>
+                                <span class="mini-click-non">Market Place</span>
+                            </a>
+                            <ul class="submenu-angle" aria-expanded="true">
+                                <li><a title="Buy Products" href=""><span class="mini-sub-pro">Buy Products</span></a></li>
+                                <li><a title="Sell Products" href=""><span class="mini-sub-pro">Sell Products</span></a></li>
+                            </ul>
                         </li>
 
                         <li>
