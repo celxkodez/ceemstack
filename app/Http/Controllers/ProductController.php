@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use Auth;
+
 use Illuminate\Http\Request;
 
 class ProductController extends Controller
@@ -13,7 +15,11 @@ class ProductController extends Controller
      */
     public function index()
     {
-        //
+        if(Auth::check()){
+            return view('product.index');
+        }else {
+            return view('pages.buy-page');
+        }
     }
 
     /**

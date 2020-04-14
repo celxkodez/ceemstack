@@ -136,6 +136,9 @@ Route::group(['middleware' => 'auth'], function(){
 });
 
 
+// CONDITIONAL PAGES ROUTE 
+Route::get('/products/buy', 'ProductController@index')->name('products.index');
+
 
 
 // FOR ONLY TESTING PURPOSES

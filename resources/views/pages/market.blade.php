@@ -62,9 +62,11 @@
             <div class="card shadow bg-light m-3">
                 <p class="mt-2">Sell Your Apps here with ease</p>
 
+                
+
                 <a class="btn btn-primary" href="#">
-                  <i class="fa fa-buysellads" aria-hidden="true"></i>
-                  Buy
+                  <i class="fa fa-sellsy" aria-hidden="true"></i>
+                  Sell
                 </a>
             </div>
 
@@ -73,9 +75,9 @@
             <div class="card shadow bg-light m-3">
               <p class="mt-2">Get a ready made app for the cheapest price </p>
 
-              <a class="btn btn-primary" href="#">
-                <i class="fa fa-sellsy" aria-hidden="true"></i>
-                Sell
+              <a class="btn btn-primary" href="{{ route('products.index') }}">
+                <i class="fa fa-buysellads" aria-hidden="true"></i>
+                Buy
               </a>
             </div>
           </div>
