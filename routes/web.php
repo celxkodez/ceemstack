@@ -131,6 +131,19 @@ Route::group(['middleware' => 'auth'], function(){
     'as' => 'profile.edit'
   ]);
 
+
+  // products posting routes
+
+  Route::get('/products/create', [
+    'uses' => 'ProductController@create',
+    'as' => 'products.create'
+  ]);
+
+  Route::post('/products/store', [
+    'uses' => 'ProductController@store',
+    'as' => 'products.store'
+  ]);
+
   
 
 });

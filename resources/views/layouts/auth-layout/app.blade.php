@@ -136,7 +136,7 @@
                             </a>
                             <ul class="submenu-angle" aria-expanded="true">
                                 <li><a title="Buy Products" href="{{ route('products.index') }}"><span class="mini-sub-pro">Buy Products</span></a></li>
-                                <li><a title="Sell Products" href=""><span class="mini-sub-pro">Sell Products</span></a></li>
+                                <li><a title="Sell Products" href="{{ route('products.create') }}"><span class="mini-sub-pro">Sell Products</span></a></li>
                             </ul>
                         </li>
 
