@@ -139,7 +139,7 @@ class TeamController extends Controller
     public function leaveTeam($id)
     {
         $team = Team::find($id);
-        Auth::user()->teams()->asyb($id);
+        Auth::user()->teams()->detach($id);
 
         Session::flash('success', "You left $team->team successfully!");
 

@@ -26,6 +26,56 @@
     <!-- dropzone JS
 		============================================ -->
     <script src="{{ asset('app-js/dropzone/dropzone.js') }}"></script>
+
+    <!-- additional dropzone configurations -->
+
+
+      
+
+    <script>
+      Dropzone.options.upload = {
+        url: "{{ route('products.store') }}",
+        uploadMultiple: true,
+        acceptedFiles: '.png, .svg, .jpg, .gif',
+        autoProcessQueue: false,
+        addRemoveLinks: true,
+        init: function(){
+
+          var upload = this;
+
+          let submit = document.querySelector('#submit');
+          // let submit = $('#submit');
+
+          let form = document.querySelector('#upload');
+
+          submit.addEventListener('click', (e)=>{
+            e.preventDefault();
+            upload.processQueue();
+          });
+
+          this.on('sending', function(file, xhr, formData){
+
+            
+            var data = form.querySelectorAll('input');
+            console.log(data);
+            data.forEach(function(key, el){
+              formData.append(el.name, el.value);
+            });
+          });
+          
+         
+        }
+
+      };
+
+      // let submit = document.querySelector('#submit');
+
+      // submit.addEventListener('click', (e)=>{
+      //   e.preventDefault();
+      //   upload.processQueue();
+      // });
+   
+   </script>
 @endpush
 
 
@@ -41,8 +91,8 @@
               </div>
               <!-- class="mx-auto" -->
               <div class="m-5 text-left form-wrapper">
-              <div class="dropzone-pro">
-                <form class="dropzone dropzone-custom needsclick"  id="demo-upload" action="{{ route('products.store') }}" method="post" enctype="multipart/form-data">
+              <!-- <div class="dropzone-pro"> -->
+                <form class="dropzone"  id="upload" action="{{ route('products.store') }}" method="post" enctype="multipart/form-data">
                   @csrf
                   <div class="form-group">
                     <input type="text" name="post_title" class="form-control" placeholder="Post Title">
@@ -87,9 +137,9 @@
                 
 
                 
-                  <button type="submit" class="btn btn-primary pull-right">Post</button>
+                  <button id="submit" type="submit" class="btn btn-primary pull-right">Post</button>
                 </form>
-              </div>
+              <!-- </div> -->
 
                 
                 
